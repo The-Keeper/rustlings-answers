@@ -4,15 +4,15 @@
 // Step 2: Get the bar_for_fuzz and default_to_baz tests passing!
 // Execute the command `rustlings hint if2` if you want a hint :)
 
-// I AM NOT DONE
+// Probably not as expected but more ideomatic:
 
 pub fn fizz_if_foo(fizzish: &str) -> &str {
-    if fizzish == "fizz" {
-        "foo"
-    } else {
-        1
+    match fizzish {
+        "fizz" => "foo",
+        "fuzz" => "bar",
+        _      => "baz"
     }
-}
+} 
 
 // No test changes needed!
 #[cfg(test)]
