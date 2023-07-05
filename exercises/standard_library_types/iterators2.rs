@@ -2,8 +2,6 @@
 // In this module, you'll learn some of unique advantages that iterators can offer.
 // As always, there are hints if you execute `rustlings hint iterators2`!
 
-// I AM NOT DONE
-
 // Step 1. Complete the `capitalize_first` function to pass the first two cases.
 pub fn capitalize_first(input: &str) -> String {
     let mut c = input.chars();
